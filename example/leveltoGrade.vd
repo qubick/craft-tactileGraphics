@@ -58,8 +58,23 @@ unique_level.forEach(function(l){
 	}
 	grds.push(data)
 })
+
+var sides = ["12,13,5", "3,4,7"]
+
+var data = {}
+var cont = []
+
+sides.forEach(function(s, i){
+	data = {
+		num:i,
+		lengths: s
+	}
+	cont.push(data)
+})
+
 ```
 ### barchart
+
 ```jade
 table
 	tr
@@ -69,4 +84,10 @@ table
 	tr
 		td!= viz.piechart(grds) 
 
+```
+### Triangle
+```jade
+table
+	tr
+		td!= viz.triangle(cont)
 ```

@@ -61,7 +61,7 @@ unique_level.forEach(function(l){
 ```
 ### barchart
 ```jade
-table 
+table
 	tr
 		td!= viz.barchart(grds)
 	tr
